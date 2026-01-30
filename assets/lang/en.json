@@ -1,0 +1,246 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Our Services",
+    "gallery": "Gallery",
+    "products": "Products",
+    "contact": "Contact",
+    "freshCoconuts": "Fresh Coconuts",
+    "huskedCoconuts": "Husked Coconuts",
+    "semiHusked": "Semi-Husked",
+    "tenderCoconuts": "Tender Coconuts",
+    "copra": "Copra"
+  },
+  "hero": {
+    "title1": "Premium Quality Pollachi Coconuts",
+    "subtitle1": "Direct from the rich red soil of Zamin Uthukuli. We supply high-quality fresh coconuts known for their sweet water and thick meat.",
+    "btn1": "Order Now",
+    "title2": "High Grade Copra & Oil",
+    "subtitle2": "Sun-dried, hygienic, and sulphur-free Copra perfect for oil extraction and culinary uses.",
+    "btn2": "View Products",
+    "title3": "Fresh Tender Coconuts",
+    "subtitle3": "Experience the natural sweetness and health benefits of our carefully harvested tender coconuts.",
+    "btn3": "Contact Us"
+  },
+  "services": {
+    "title": "OUR SPECIALTIES",
+    "subtitle": "Why AA Coconut Traders is the Best Choice",
+    "freshCoconuts": {
+      "title": "Fresh Coconuts",
+      "desc": "We supply semi-husked and fully husked coconuts graded by size (12 inches, 13 inches+) for wholesale."
+    },
+    "qualityCopra": {
+      "title": "Quality Copra",
+      "desc": "Our copra is dried naturally to ensure high oil content, suitable for milling and edible purposes."
+    },
+    "tenderCoconuts": {
+      "title": "Tender Coconuts",
+      "desc": "Hand-picked tender coconuts packed with electrolytes and natural sweetness."
+    },
+    "logistics": {
+      "title": "Logistics",
+      "desc": "We handle transport arrangements to ensure safe and timely delivery across India."
+    }
+  },
+  "about": {
+    "whoWeAre": "Who We Are",
+    "trustedSuppliers": "Trusted Suppliers from Zamin Uthukuli, Pollachi",
+    "aboutDesc1": "AA Coconut Traders has established itself as a reliable name in the coconut industry. Sourcing directly from the fertile lands of Pollachi, we ensure that every nut we supply meets the highest standards of quality.",
+    "aboutDesc2": "Our coconuts are preferred for their size, weight, and the sweetness of their water. Whether you need bulk supply for retail, oil mills, or export, we are your best partner.",
+    "natureBest": "Nature's Best from Pollachi",
+    "natureDesc": "Our farm management practices ensure that the coconuts are harvested at the right maturity level. This guarantees:",
+    "benefits": {
+      "thickKernel": "Thicker Kernel (Meat)",
+      "higherOil": "Higher Oil Content",
+      "sweeterWater": "Sweeter Water",
+      "longerShelf": "Longer Shelf Life"
+    },
+    "enquiryBtn": "Place an Enquiry"
+  },
+  "process": {
+    "title": "Our Process",
+    "subtitle": "From Farm to Your Doorstep",
+    "step1": "Harvesting",
+    "step2": "De-Husking",
+    "step3": "Grading",
+    "step4": "Packing"
+  },
+  "gallery": {
+    "title": "GALLERY",
+    "subtitle": "Our Products and Operations"
+  },
+  "heroImage": {
+    "title": "Premium Quality Guaranted",
+    "subtitle": "Direct sourcing from Pollachi's finest farms",
+    "btn": "Learn More"
+  },
+  "cta": {
+    "title": "Get Daily Market Price Updates",
+    "subtitle": "Subscribe to know the daily rates of Pollachi coconuts, copra, and tender coconuts.",
+    "emailPlaceholder": "Enter your e-mail",
+    "subscribeBtn": "Subscribe",
+    "loading": "Loading",
+    "error": "Error",
+    "sent": "Your subscription request has been sent. Thank you!"
+  },
+  "footer": {
+    "about": {
+      "location": "Zamin Uthukuli, Pollachi, Coimbatore Dist, Tamil Nadu, India",
+      "phone": "Phone: +91 97399 77183",
+      "email": "Email: contact@aacoconuttraders.com"
+    },
+    "links": {
+      "useful": "Useful Links",
+      "home": "Home",
+      "about": "About us",
+      "services": "Services",
+      "terms": "Terms of service",
+      "privacy": "Privacy policy"
+    },
+    "products": {
+      "title": "Our Products",
+      "fresh": "Pollachi Fresh Coconuts",
+      "copra": "Edible Copra",
+      "milling": "Milling Copra",
+      "tender": "Tender Coconuts",
+      "semi": "Semi-Husked Coconuts"
+    },
+    "chooseUs": {
+      "title": "Why Choose Us",
+      "direct": "Direct from Farmers",
+      "oil": "High Oil Content",
+      "price": "Best Market Price",
+      "delivery": "Timely Delivery"
+    },
+    "copyright": "© Copyright AA Coconut Traders. All Rights Reserved",
+    "designed": "Designed and Developed by Virtual Tech Finpros Private Limited"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch for the best Pollachi Coconuts directly from our farm.",
+    "infoTitle": "Contact Information",
+    "infoDesc": "We are available to answer your queries regarding supply and export.",
+    "location": "Location:",
+    "locationDesc": "Zamin Uthukuli, Pollachi, Coimbatore Dist, Tamil Nadu, India",
+    "email": "Email:",
+    "emailValue": "contact@aacoconutenterprises.com",
+    "call": "Call:",
+    "callValue": "+91 97399 77183",
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "subject": "Subject (e.g. Bulk Order Enquiry)",
+      "message": "Type your message here...",
+      "sendBtn": "Send Message",
+      "loading": "Loading",
+      "error": "Error",
+      "sent": "Your message has been sent. Thank you!"
+    }
+  },
+  "aboutPage": {
+    "title": "About Us",
+    "breadcrumb": "About",
+    "subtitle": "Your trusted partner for premium quality coconuts directly from the rich soil of Pollachi.",
+    "worldClass": "World Class Pollachi Coconuts",
+    "aboutDesc1": "Welcome to AA Coconut Enterprises. Located in the heart of Zamin Uthukuli, Pollachi, we are a leading supplier and exporter of high-grade coconuts. Pollachi is globally renowned for its ideal climate and red soil, which produces coconuts that are superior in taste, size, and shelf life.",
+    "aboutDesc2": "Much like the renowned Amudhasurabi standards, we ensure that every coconut we supply is handpicked from the best farms. Our coconuts are famous for their high water content, thick and sweet kernel (meat), and high oil percentage. We are committed to delivering freshness and quality to our customers across India and overseas.",
+    "features": {
+      "highOil": "High oil content and thick, sweet meat",
+      "directProcurement": "Direct procurement from Zamin Uthukuli farmers",
+      "qualityGrading": "Strict quality grading for size and weight"
+    },
+    "contactBtn": "Contact Us Today"
+  },
+  "servicesPage": {
+    "title": "Our Services",
+    "subtitle": "Expert Handling from Tree to Truck",
+    "whatWeDo": "WHAT WE DO",
+    "comprehensive": "Comprehensive Coconut Solutions",
+    "organicCultivation": {
+      "title": "Organic Cultivation",
+      "desc": "We grow coconuts using organic manure and sustainable farming practices in Zamin Uthukuli."
+    },
+    "deHusking": {
+      "title": "De-Husking",
+      "desc": "Professional de-husking service to provide semi-husked and fully husked nuts based on client requirements."
+    },
+    "grading": {
+      "title": "Grading & Sorting",
+      "desc": "Strict quality checks to sort coconuts by size (12/13 inches) and weight to ensure export quality."
+    },
+    "hybridSeedlings": {
+      "title": "Hybrid Seedlings",
+      "desc": "We supply high-yield coconut seedlings, nurtured in our nurseries for better productivity."
+    },
+    "copraDrying": {
+      "title": "Copra Drying",
+      "desc": "Natural sun-drying and hygienic processing of copra to ensure high oil percentage for milling."
+    },
+    "exportPacking": {
+      "title": "Export Packing",
+      "desc": "Secure packing in Gunny/PP bags (25/50 nuts) ensuring safe transit for international shipping."
+    },
+    "dripIrrigation": {
+      "title": "Drip Irrigation",
+      "desc": "Advanced watering systems to ensure consistent yield and heavy coconuts throughout the year."
+    },
+    "wholesaleSupply": {
+      "title": "Wholesale Supply",
+      "desc": "Bulk supply of fresh coconuts to markets and industries across India at competitive prices."
+    },
+    "processing": {
+      "title": "PROCESSING PROCEDURE",
+      "subtitle": "Ensuring Excellence in Every Coconut",
+      "ourProcess": "Our Process",
+      "processDesc": "At AA Coconut Enterprises, we maintain the highest standards of quality. Our processing involves:",
+      "sourcing": "Sourcing: Direct from Zamin Uthukuli farms.",
+      "dehusking": "De-Husking: Careful manual husking to protect the shell.",
+      "grading": "Grading: Sorting by size (12-13 inches) and weight.",
+      "packing": "Packing: Using breathable PP/Gunny bags for export."
+    },
+    "qualityControl": {
+      "title": "Quality Control",
+      "desc": "We inspect every single coconut for cracks, water sound, and freshness before it leaves our facility. This ensures that our customers receive only A-Grade Pollachi coconuts with long shelf life and high oil content."
+    },
+    "packaging": {
+      "title": "Packaging Standards",
+      "desc": "To prevent damage during transit, we use high-strength packaging materials. We offer customized bag sizes (25 nuts or 50 nuts per bag) to suit the needs of wholesalers and exporters alike."
+    },
+    "products": {
+      "title": "OUR PREMIUM PRODUCTS",
+      "subtitle": "From the heart of Pollachi",
+      "freshCoconuts": {
+        "title": "Pollachi Fresh Coconuts",
+        "desc": "Known for their sweet water, thick meat, and high oil content. Available in all sizes."
+      },
+      "copra": {
+        "title": "Edible & Milling Copra",
+        "desc": "High-grade, sun-dried copra perfectly suited for oil extraction and culinary use."
+      },
+      "tenderCoconuts": {
+        "title": "Tender Coconuts",
+        "desc": "Rich in electrolytes and natural sweetness, harvested daily for maximum freshness."
+      }
+    },
+    "whyChooseUs": "Why Choose Us",
+    "expertise": "Over 20 years of expertise in the Coconut Industry",
+    "commitment": "AA Coconut Enterprises is committed to delivering the authentic taste of Pollachi to the world. Our farming and processing methods ensure sustainability and quality.",
+    "primeLocation": "Prime Location",
+    "locationDesc": "Sourced from Zamin Uthukuli's rich red soil.",
+    "highYield": "High Yield",
+    "yieldDesc": "Guaranteed size, weight, and thickness.",
+    "globalExport": "Global Export",
+    "exportDesc": "Quality standards meeting international markets."
+  },
+  "testimonials": {
+    "title": "Gallery",
+    "breadcrumb": "Gallery",
+    "galleryTitle": "GALLERY",
+    "gallerySubtitle": "Our Products and Operations",
+    "ctaTitle": "Subscribe To Our Newsletter",
+    "ctaSubtitle": "Get daily updates on coconut market prices, copra rates, and export availability from Pollachi.",
+    "emailPlaceholder": "Enter your e-mail",
+    "subscribeBtn": "Subscribe"
+  }
+}

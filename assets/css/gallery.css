@@ -1,0 +1,118 @@
+/*--------------------------------------------------------------
+# Gallery Slider
+--------------------------------------------------------------*/
+.gallery .swiper {
+  padding: 60px 0;
+}
+
+.gallery .swiper-wrapper {
+  align-items: center;
+}
+
+.gallery .swiper-slide {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery .gallery-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery .swiper-slide a:hover .gallery-img {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.gallery .swiper-button-next,
+.gallery .swiper-button-prev {
+  width: 50px;
+  height: 50px;
+  margin-top: -25px;
+  background: var(--accent-color);
+  border-radius: 50%;
+  color: var(--contrast-color);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.gallery .swiper-button-next:hover,
+.gallery .swiper-button-prev:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.gallery .swiper-button-next::after,
+.gallery .swiper-button-prev::after {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.gallery .swiper-pagination {
+  bottom: -50px;
+}
+
+.gallery .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: color-mix(in srgb, var(--default-color), transparent 70%);
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.gallery .swiper-pagination-bullet-active {
+  background: var(--accent-color);
+  transform: scale(1.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .gallery .swiper {
+    padding: 40px 0;
+  }
+
+  .gallery .gallery-img {
+    height: 200px;
+  }
+
+  .gallery .swiper-button-next,
+  .gallery .swiper-button-prev {
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+  }
+
+  .gallery .swiper-button-next::after,
+  .gallery .swiper-button-prev::after {
+    font-size: 16px;
+  }
+
+  .gallery .swiper-pagination {
+    bottom: -40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery .gallery-img {
+    height: 180px;
+  }
+
+  .gallery .swiper-button-next,
+  .gallery .swiper-button-prev {
+    width: 35px;
+    height: 35px;
+    margin-top: -17px;
+  }
+
+  .gallery .swiper-button-next::after,
+  .gallery .swiper-button-prev::after {
+    font-size: 14px;
+  }
+}

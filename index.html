@@ -1,92 +1,1007 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name=viewport content="width=device-width, initial-scale=1">
-    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-    <style>
-        body { margin: 0; padding: 0; }
-        html { height: 100%; cursor: default; }
-        body {
-            font-family: "Roboto", sans-serif; /* Default font */
-            width: 100%; height: 100%;
-            text-align: center;
-            display: table;
-            opacity: 1;
-            animation: fadein 3s forwards;
-        }
-        h2 {
-            font-weight: 300;
-            margin-bottom: 25px;
-        }
-        img {
-            width: 25%; /* Image width */
-            border: 0; /* For IE */
-            /* Aspect ratio of image, gives initial dimension to prevent text moving down once image is loaded */
-            /* When changing logo, change this also */
-            aspect-ratio: 125 / 50;
-        }
-        #main {
-            vertical-align: middle;
-            display: table-cell;
-        }
-        /* Progress bar */
-        #progress {
-            width: 45%; /* Bar width */
-            margin: 0 auto;
-            border-radius: 10px; /* Roundness */
-            background-color: #a8a8a8; /* Background colour */
-            padding: 7px 5px;
-            /* border: 5px solid #a8a8a8; Border */
-        }
-        #fill {
-            padding: 2px 0;
-            background-color: #00b98b; /* Fill colour */
-            width: 35%; /* Bar percentage, change text below also */
-            border-radius: 25px; /* Roundness */
-            animation: proanimate 2s;
-        }
-        #barpercent h3 {
-            color: white; /* Bar percentage text colour */
-            margin: 0; padding: 0;
-            opacity: 1;
-            animation: fadein 3s forwards;
-        }
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Home - AA Coconut Traders</title>
+    <meta
+      name="description"
+      content="AA Coconut Traders - Leading supplier of fresh Pollachi coconuts, copra, and tender coconuts from Zamin Uthukuli."
+    />
+    <meta
+      name="keywords"
+      content="Pollachi Coconut, AA Coconut Traders, Copra Supplier, Tender Coconut, Zamin Uthukuli Coconut, Coconut Wholesale"
+    />
 
-        /* Fades in animation */
-        @keyframes fadein  {
-            from { opacity: 0; }
-        }
-        /* Animates bar on page load */
-        @keyframes proanimate {
-            from { width: 0%; }
-        }
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-        @media screen and (max-width:600px) {
-            img {
-                width: 60%;
-            }
-            h1 {
-                font-size: 1.3em;
-            }
-            h2 {
-                margin: 1.1em;
-                font-size: 1.1em;
-            }
-            #progress {
-                width: 80%; /* Bar width */
-            }
-        }
-    </style>
-    <title>Coming Soon</title>
-</head>
-<body>
-    <div id="main">
-        <img src="logo.png" alt="Logo Image">
-        <h1>Company Name</h1>
-        <h2>Our website is currently under construction. </h2>
-        <div id="progress"><div id="fill"><div id="barpercent"><h3>35%</h3></div></div></div>
-    </div>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-</body>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+
+    <!-- Google Translate Script -->
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: "en",
+            includedLanguages: "en,ta",
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+            autoDisplay: false,
+          },
+          "google_translate_element",
+        );
+      }
+    </script>
+    <script
+      type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
+  </head>
+
+  <body class="index-page">
+    <header
+      id="header"
+      class="header d-flex align-items-center position-relative"
+    >
+      <div
+        class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
+      >
+        <a href="index.html" class="logo d-flex align-items-center">
+          <img src="assets/img/logo.png" alt="AA Coconut Traders Logo" />
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li>
+              <a href="index.html" class="active" data-i18n="nav.home">Home</a>
+            </li>
+            <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
+            <li>
+              <a href="services.html" data-i18n="nav.services">Our Services</a>
+            </li>
+            <li>
+              <a href="testimonials.html" data-i18n="nav.gallery">Gallery</a>
+            </li>
+            <li class="dropdown">
+              <a href="#"
+                ><span data-i18n="nav.products">Products</span>
+                <i class="bi bi-chevron-down toggle-dropdown"></i
+              ></a>
+              <ul>
+                <li>
+                  <a href="#" data-i18n="nav.freshCoconuts">Fresh Coconuts</a>
+                </li>
+                <li>
+                  <a href="#" data-i18n="nav.huskedCoconuts">Husked Coconuts</a>
+                </li>
+                <li><a href="#" data-i18n="nav.semiHusked">Semi-Husked</a></li>
+                <li>
+                  <a href="#" data-i18n="nav.tenderCoconuts">Tender Coconuts</a>
+                </li>
+                <li><a href="#" data-i18n="nav.copra">Copra & Oil</a></li>
+              </ul>
+            </li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+        <div class="d-flex align-items-center ms-3">
+          <!-- Custom Language Selector -->
+          <div class="dropdown">
+            <button
+              class="btn btn-outline-secondary dropdown-toggle language-selector d-flex align-items-center"
+              type="button"
+              id="languageDropdown"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="bi bi-translate me-2"></i>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+              <li>
+                <a class="dropdown-item" href="#" onclick="translatePage('en')"
+                  >English</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#" onclick="translatePage('ta')"
+                  >தமிழ் (Tamil)</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <a
+            href="tel:+919739977183"
+            class="call-button d-flex align-items-center px-3 py-2 rounded text-white text-decoration-none ms-3"
+            style="background-color: #116530"
+          >
+            <i class="bi bi-telephone me-2"></i>
+            <div class="d-flex flex-column text-start">
+              <small>Call Anytime</small>
+              <strong>+91 97399 77183</strong>
+            </div>
+          </a>
+        </div>
+
+        <!-- Hidden Google Translate Element -->
+        <div id="google_translate_element" style="display: none"></div>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- Hero Section (Slider) -->
+      <section id="hero" class="hero section dark-background">
+        <div
+          id="hero-carousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-bs-interval="5000"
+        >
+          <!-- Slide 1: Coconut Farm -->
+          <div class="carousel-item active" data-aos="fade-in">
+            <img src="assets\img\Mask group-6.png" alt="Pollachi Coconuts" />
+            <div
+              class="carousel-container"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <h2
+                data-aos="zoom-in"
+                data-aos-delay="400"
+                data-i18n="hero.title1"
+              >
+                Premium Quality Pollachi Coconuts
+              </h2>
+              <p
+                data-aos="fade-up"
+                data-aos-delay="500"
+                data-i18n="hero.subtitle1"
+              >
+                Direct from the rich red soil of Zamin Uthukuli. We supply
+                high-quality fresh coconuts known for their sweet water and
+                thick meat.
+              </p>
+              <a
+                href="contact.html"
+                class="btn-get-started"
+                data-aos="fade-up"
+                data-aos-delay="600"
+                data-i18n="hero.btn1"
+                >Order Now</a
+              >
+            </div>
+          </div>
+
+          <!-- Slide 2: Copra/Oil -->
+          <div class="carousel-item" data-aos="fade-in">
+            <img
+              src="assets/img/WhatsApp Image 2026-01-22 at 1.03.28 PM.jpeg"
+              alt="Copra"
+            />
+            <div
+              class="carousel-container"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <h2
+                data-aos="zoom-in"
+                data-aos-delay="400"
+                data-i18n="hero.title2"
+              >
+                High Grade Copra & Oil
+              </h2>
+              <p
+                data-aos="fade-up"
+                data-aos-delay="500"
+                data-i18n="hero.subtitle2"
+              >
+                Sun-dried, hygienic, and sulphur-free Copra perfect for oil
+                extraction and culinary uses.
+              </p>
+              <a
+                href="services.html"
+                class="btn-get-started"
+                data-aos="fade-up"
+                data-aos-delay="600"
+                data-i18n="hero.btn2"
+                >View Products</a
+              >
+            </div>
+          </div>
+
+          <!-- Slide 3: Tender Coconut -->
+          <div class="carousel-item" data-aos="fade-in">
+            <img
+              src="assets\img\Gemini_Generated_Image_lu8ew9lu8ew9lu8e.png"
+              alt="Tender Coconut"
+            />
+            <div
+              class="carousel-container"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <h2
+                data-aos="zoom-in"
+                data-aos-delay="400"
+                data-i18n="hero.title3"
+              >
+                Fresh Tender Coconuts
+              </h2>
+              <p
+                data-aos="fade-up"
+                data-aos-delay="500"
+                data-i18n="hero.subtitle3"
+              >
+                Experience the natural sweetness and health benefits of our
+                carefully harvested tender coconuts.
+              </p>
+              <a
+                href="contact.html"
+                class="btn-get-started"
+                data-aos="fade-up"
+                data-aos-delay="600"
+                data-i18n="hero.btn3"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+
+          <a
+            class="carousel-control-prev"
+            href="#hero-carousel"
+            role="button"
+            data-bs-slide="prev"
+          >
+            <span
+              class="carousel-control-prev-icon bi bi-chevron-left"
+              aria-hidden="true"
+            ></span>
+          </a>
+
+          <a
+            class="carousel-control-next"
+            href="#hero-carousel"
+            role="button"
+            data-bs-slide="next"
+          >
+            <span
+              class="carousel-control-next-icon bi bi-chevron-right"
+              aria-hidden="true"
+            ></span>
+          </a>
+
+          <ol class="carousel-indicators">
+            <li
+              data-target="#hero-carousel"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#hero-carousel" data-slide-to="1"></li>
+            <li data-target="#hero-carousel" data-slide-to="2"></li>
+          </ol>
+        </div>
+      </section>
+      <!-- /Hero Section -->
+
+      <!-- Services Section -->
+      <section id="services" class="services section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2 data-i18n="services.title">OUR SPECIALTIES</h2>
+          <p data-i18n="services.subtitle">
+            Why AA Coconut Traders is the Best Choice
+          </p>
+        </div>
+        <!-- End Section Title -->
+        <div class="content">
+          <div class="container">
+            <div class="row g-0">
+              <!-- Item 1 -->
+              <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div
+                  class="service-card"
+                  style="
+                    background-image: url(&quot;assets/img/fresh coconut.png&quot;);
+                  "
+                >
+                  <div class="service-card-overlay"></div>
+                  <div class="service-card-content">
+                    <h3 class="service-card-title">Fresh Coconuts</h3>
+                    <p class="service-card-description">
+                      We supply semi-husked and fully husked coconuts graded by
+                      size (12 inches, 13 inches+) for wholesale.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div
+                  class="service-card"
+                  style="
+                    background-image: url(&quot;assets/img/copra.png&quot;);
+                  "
+                >
+                  <div class="service-card-overlay"></div>
+                  <div class="service-card-content">
+                    <h3
+                      class="service-card-title"
+                      data-i18n="services.qualityCopra.title"
+                    >
+                      Quality Copra
+                    </h3>
+                    <p
+                      class="service-card-description"
+                      data-i18n="services.qualityCopra.desc"
+                    >
+                      Our copra is dried naturally to ensure high oil content,
+                      suitable for milling and edible purposes.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 3 -->
+              <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div
+                  class="service-card"
+                  style="
+                    background-image: url(&quot;assets/img/tender coconut.png&quot;);
+                  "
+                >
+                  <div class="service-card-overlay"></div>
+                  <div class="service-card-content">
+                    <h3
+                      class="service-card-title"
+                      data-i18n="services.tenderCoconuts.title"
+                    >
+                      Tender Coconuts
+                    </h3>
+                    <p
+                      class="service-card-description"
+                      data-i18n="services.tenderCoconuts.desc"
+                    >
+                      Hand-picked tender coconuts packed with electrolytes and
+                      natural sweetness.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 4 -->
+              <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div
+                  class="service-card"
+                  style="
+                    background-image: url(&quot;assets/img/Mask group-7.png&quot;);
+                  "
+                >
+                  <div class="service-card-overlay"></div>
+                  <div class="service-card-content">
+                    <h3
+                      class="service-card-title"
+                      data-i18n="services.logistics.title"
+                    >
+                      Logistics
+                    </h3>
+                    <p
+                      class="service-card-description"
+                      data-i18n="services.logistics.desc"
+                    >
+                      We handle transport arrangements to ensure safe and timely
+                      delivery across India.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Services Section -->
+
+      <!-- About Section -->
+      <section id="about" class="about section">
+        <div class="content">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 mb-4 mb-lg-0">
+                <!-- Unsplash Image: Coconut Tree -->
+                <img
+                  src="assets\img\Gemini_Generated_Image_lu8ew9lu8ew9lu8e.png"
+                  alt="Coconut Tree"
+                  class="img-fluid img-overlap"
+                  data-aos="zoom-out"
+                />
+              </div>
+              <div
+                class="col-lg-5 ml-auto"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <h3
+                  class="content-subtitle text-white opacity-50"
+                  data-i18n="about.whoWeAre"
+                >
+                  Who We Are
+                </h3>
+                <h2 class="content-title mb-4">
+                  <span data-i18n="about.trustedSuppliers"
+                    >Trusted Suppliers from</span
+                  >
+                  <strong>Zamin Uthukuli, Pollachi</strong>
+                </h2>
+                <p class="opacity-50" data-i18n="about.aboutDesc1">
+                  AA Coconut Traders has established itself as a reliable name
+                  in the coconut industry. Sourcing directly from the fertile
+                  lands of Pollachi, we ensure that every nut we supply meets
+                  the highest standards of quality.
+                </p>
+                <p data-i18n="about.aboutDesc2">
+                  Our coconuts are preferred for their size, weight, and the
+                  sweetness of their water. Whether you need bulk supply for
+                  retail, oil mills, or export, we are your best partner.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /About Section -->
+
+      <!-- About 3 Section (Video Section) -->
+      <section id="about-3" class="about-3 section">
+        <div class="container">
+          <div class="row gy-4 justify-content-between align-items-center">
+            <div
+              class="col-lg-6 order-lg-2 position-relative"
+              data-aos="zoom-out"
+              data-aos-delay="100"
+            >
+              <!-- Unsplash Image: Pile of Coconuts -->
+              <img
+                src="assets\img\Mask group 8.png"
+                alt="Coconut Pile"
+                class="img-fluid"
+              />
+            </div>
+            <div
+              class="col-lg-5 order-lg-1"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <h2 class="content-title mb-4" data-i18n="about.natureBest">
+                Nature's Best from Pollachi
+              </h2>
+              <p
+                class="mb-4"
+                data-aos="fade-up"
+                data-aos-delay="250"
+                data-i18n="about.natureDesc"
+              >
+                Our farm management practices ensure that the coconuts are
+                harvested at the right maturity level. This guarantees:
+              </p>
+              <ul
+                class="list-unstyled list-check"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <li
+                  data-aos="fade-right"
+                  data-aos-delay="350"
+                  data-i18n="about.benefits.thickKernel"
+                >
+                  Thicker Kernel (Meat)
+                </li>
+                <li
+                  data-aos="fade-right"
+                  data-aos-delay="400"
+                  data-i18n="about.benefits.higherOil"
+                >
+                  Higher Oil Content
+                </li>
+                <li
+                  data-aos="fade-right"
+                  data-aos-delay="450"
+                  data-i18n="about.benefits.sweeterWater"
+                >
+                  Sweeter Water
+                </li>
+                <li
+                  data-aos="fade-right"
+                  data-aos-delay="500"
+                  data-i18n="about.benefits.longerShelf"
+                >
+                  Longer Shelf Life
+                </li>
+              </ul>
+
+              <p>
+                <a
+                  href="contact.html"
+                  class="btn-cta"
+                  data-aos="fade-up"
+                  data-aos-delay="550"
+                  data-i18n="about.enquiryBtn"
+                  >Place an Enquiry</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /About 3 Section -->
+
+      <!-- Services 2 Section (Carousel) -->
+      <section id="services-2" class="services-2 section dark-background">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2 data-i18n="process.title">Our Process</h2>
+          <p data-i18n="process.subtitle">From Farm to Your Doorstep</p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="services-carousel-wrap">
+          <div class="container">
+            <div class="swiper init-swiper">
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  },
+                  "navigation": {
+                    "nextEl": ".js-custom-next",
+                    "prevEl": ".js-custom-prev"
+                  },
+                  "breakpoints": {
+                    "320": {
+                      "slidesPerView": 1,
+                      "spaceBetween": 40
+                    },
+                    "1200": {
+                      "slidesPerView": 3,
+                      "spaceBetween": 40
+                    }
+                  }
+                }
+              </script>
+              <button class="navigation-prev js-custom-prev">
+                <i class="bi bi-arrow-left-short"></i>
+              </button>
+              <button class="navigation-next js-custom-next">
+                <i class="bi bi-arrow-right-short"></i>
+              </button>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide" data-aos="fade-up">
+                  <div class="service-item">
+                    <div class="service-item-contents">
+                      <a href="#">
+                        <span class="service-item-category">Step 1</span>
+                        <h2
+                          class="service-item-title"
+                          data-i18n="process.step1"
+                        >
+                          Harvesting
+                        </h2>
+                      </a>
+                    </div>
+                    <img
+                      src="assets\img\Mask group-2.png"
+                      alt="Harvesting"
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                >
+                  <div class="service-item">
+                    <div class="service-item-contents">
+                      <a href="#">
+                        <span class="service-item-category">Step 2</span>
+                        <h2 class="service-item-title">De-Husking</h2>
+                      </a>
+                    </div>
+                    <img
+                      src="assets\img\Mask group-3.png"
+                      alt="Husking"
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
+                  <div class="service-item">
+                    <div class="service-item-contents">
+                      <a href="#">
+                        <span class="service-item-category">Step 3</span>
+                        <h2
+                          class="service-item-title"
+                          data-i18n="process.step3"
+                        >
+                          Grading
+                        </h2>
+                      </a>
+                    </div>
+                    <img
+                      src="assets\img\Mask group-5.png"
+                      alt="Grading"
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  <div class="service-item">
+                    <div class="service-item-contents">
+                      <a href="#">
+                        <span class="service-item-category">Step 4</span>
+                        <h2
+                          class="service-item-title"
+                          data-i18n="process.step4"
+                        >
+                          Packing
+                        </h2>
+                      </a>
+                    </div>
+                    <img
+                      src="assets\img\Mask group-4.png"
+                      alt="Packing"
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Services 2 Section -->
+
+      <!-- Gallery Section -->
+      <section class="gallery section" id="gallery">
+        <div class="container section-title" data-aos="fade-up">
+          <h2 data-i18n="gallery.title">GALLERY</h2>
+          <p data-i18n="gallery.subtitle">Our Products and Operations</p>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4">
+              <a href="assets/img/copra.png" data-glightbox="gallery">
+                <img src="assets/img/copra.png" alt="Copra" class="img-fluid" />
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <a href="assets/img/fresh coconut.png" data-glightbox="gallery">
+                <img
+                  src="assets/img/fresh coconut.png"
+                  alt="Fresh Coconut"
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <a
+                href="assets/img/Gemini_Generated_Image_lu8ew9lu8ew9lu8e.png"
+                data-glightbox="gallery"
+              >
+                <img
+                  src="assets/img/Gemini_Generated_Image_lu8ew9lu8ew9lu8e.png"
+                  alt="Gallery Image"
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <a
+                href="assets/img/Gemini_Generated_Image_subadqsubadqsuba.png"
+                data-glightbox="gallery"
+              >
+                <img
+                  src="assets/img/Gemini_Generated_Image_subadqsubadqsuba.png"
+                  alt="Gallery Image"
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <a
+                href="assets/img/Gemini_Generated_Image_t6cbqt6cbqt6cbqt.png"
+                data-glightbox="gallery"
+              >
+                <img
+                  src="assets/img/Gemini_Generated_Image_t6cbqt6cbqt6cbqt.png"
+                  alt="Gallery Image"
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <a href="assets/img/Mask group-1.png" data-glightbox="gallery">
+                <img
+                  src="assets/img/Mask group-1.png"
+                  alt="Mask Group 1"
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <a href="assets/img/Mask group-2.png" data-glightbox="gallery">
+                <img
+                  src="assets/img/Mask group-2.png"
+                  alt="Mask Group 2"
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <a href="assets/img/Mask group-3.png" data-glightbox="gallery">
+                <img
+                  src="assets/img/Mask group-3.png"
+                  alt="Mask Group 3"
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <a href="assets/img/Mask group-4.png" data-glightbox="gallery">
+                <img
+                  src="assets/img/Mask group-4.png"
+                  alt="Mask Group 4"
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <a href="assets/img/Mask group-5.png" data-glightbox="gallery">
+                <img
+                  src="assets/img/Mask group-5.png"
+                  alt="Mask Group 5"
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <a href="assets/img/Mask group-6.png" data-glightbox="gallery">
+                <img
+                  src="assets/img/Mask group-6.png"
+                  alt="Mask Group 6"
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <a href="assets/img/Mask group-7.png" data-glightbox="gallery">
+                <img
+                  src="assets/img/Mask group-7.png"
+                  alt="Mask Group 7"
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <a href="assets/img/Mask group.png" data-glightbox="gallery">
+                <img
+                  src="assets/img/Mask group.png"
+                  alt="Mask Group"
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <a href="assets/img/tender coconut.png" data-glightbox="gallery">
+                <img
+                  src="assets/img/tender coconut.png"
+                  alt="Tender Coconut"
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <a
+                href="assets/img/WhatsApp Image 2026-01-22 at 1.03.28 PM.jpeg"
+                data-glightbox="gallery"
+              >
+                <img
+                  src="assets/img/WhatsApp Image 2026-01-22 at 1.03.28 PM.jpeg"
+                  alt="WhatsApp Image"
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Gallery Section -->
+
+      <!-- Hero Image Section with Overlay Text -->
+      <section id="hero-image-section" class="hero-image-section section">
+        <div class="hero-image-container">
+          <div class="hero-image-overlay"></div>
+          <div class="hero-image-content">
+            <h2 class="hero-image-title">Premium Quality Guaranted</h2>
+            <p class="hero-image-subtitle">
+              Direct sourcing from Pollachi's finest farms
+            </p>
+            <a href="contact.html" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </section>
+      <!-- /Hero Image Section -->
+    </main>
+
+    <footer id="footer" class="footer dark-background">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-4 col-md-6 footer-about">
+              <a href="index.html" class="logo d-flex align-items-center">
+                <span class="sitename">AA Coconut Traders</span>
+              </a>
+              <div class="footer-contact pt-3">
+                <p>Zamin Uthukuli, Pollachi,</p>
+                <p>Coimbatore Dist, Tamil Nadu, India</p>
+                <p class="mt-3">
+                  <strong>Phone:</strong> <span>+91 97399 77183</span>
+                </p>
+                <p>
+                  <strong>Email:</strong>
+                  <span>contact@aacoconuttraders.com</span>
+                </p>
+              </div>
+              <!-- Google Translate Widget -->
+              <div id="google_translate_element" class="mt-3"></div>
+            </div>
+
+            <div class="col-lg-2 col-md-3 footer-links">
+              <h4 data-i18n="footer.links.useful">Useful Links</h4>
+              <ul>
+                <li>
+                  <a href="index.html" data-i18n="footer.links.home">Home</a>
+                </li>
+                <li>
+                  <a href="about.html" data-i18n="footer.links.about"
+                    >About us</a
+                  >
+                </li>
+                <li>
+                  <a href="services.html" data-i18n="footer.links.services"
+                    >Services</a
+                  >
+                </li>
+                <li>
+                  <a href="#" data-i18n="footer.links.terms"
+                    >Terms of service</a
+                  >
+                </li>
+                <li>
+                  <a href="#" data-i18n="footer.links.privacy"
+                    >Privacy policy</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-3 footer-links">
+              <h4>Our Products</h4>
+              <ul>
+                <li><a href="#">Pollachi Fresh Coconuts</a></li>
+                <li><a href="#">Edible Copra</a></li>
+                <li><a href="#">Milling Copra</a></li>
+                <li><a href="#">Tender Coconuts</a></li>
+                <li><a href="#">Semi-Husked Coconuts</a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-3 footer-links">
+              <h4>Why Choose Us</h4>
+              <ul>
+                <li><a href="#">Direct from Farmers</a></li>
+                <li><a href="#">High Oil Content</a></li>
+                <li><a href="#">Best Market Price</a></li>
+                <li><a href="#">Timely Delivery</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright text-center">
+        <div
+          class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center"
+        >
+          <div
+            class="d-flex flex-column align-items-center align-items-lg-start"
+          >
+            <div>
+              © Copyright <strong><span>AA Coconut Traders</span></strong
+              >. All Rights Reserved
+            </div>
+            <div class="credits">
+              Designed and Developed by
+              <a href="#">Virtual Tech Finpros Private Limited</a>
+            </div>
+          </div>
+
+          <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+    <!-- i18n JS File -->
+    <script src="assets/js/i18n.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
